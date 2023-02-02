@@ -7,6 +7,7 @@ import {
 // Views
 import Root from "./views/Root";
 import Home from "./views/Home";
+import Contact from "./views/Contact";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <h1>Contact</h1>,
+        element: <Contact />,
       },
       {
         path: "/about",
