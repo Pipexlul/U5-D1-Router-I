@@ -2,7 +2,7 @@ import FooterIconLink from "./FooterIconLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 mt-auto">
+    <footer className="bg-gray-700 mt-auto">
       <div className="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-white sm:text-5xl">
@@ -12,9 +12,9 @@ const Footer = () => {
             Desafio Latam 2023.
           </p>
         </div>
-        <div className="pt-8 mt-10 border-t border-gray-800 sm:flex sm:items-center sm:justify-between">
+        <div className="pt-8 mt-1 border-t border-gray-800 sm:flex sm:items-center sm:justify-between">
           <nav>
-            <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+            <ul className="flex flex-wrap justify-center gap-4 text-sm lg:justify-end">
               <li>
                 <a
                   href="https://desafiolatam.com/"

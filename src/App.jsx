@@ -6,6 +6,7 @@ import {
 
 // Views
 import Root from "./views/Root";
+import Home from "./views/Home";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <h1>Home</h1>,
+        element: <Home />,
       },
       {
         path: "/contact",
