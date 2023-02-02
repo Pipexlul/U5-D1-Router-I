@@ -32,7 +32,7 @@ const Navbar = () => {
                   {({ isActive }) => {
                     return (
                       <ShinyNavLink
-                        label="Contact"
+                        label="Contacto"
                         bgColor="bg-fuchsia-600"
                         labelColor="text-fuchsia-400"
                         isActive={isActive}
@@ -46,7 +46,7 @@ const Navbar = () => {
                   {({ isActive }) => {
                     return (
                       <ShinyNavLink
-                        label="About"
+                        label="Acerca de Nos"
                         bgColor="bg-fuchsia-600"
                         labelColor="text-fuchsia-400"
                         isActive={isActive}
