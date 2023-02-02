@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import { decrypt, randomLetter } from "../../utils/secretUtils";
 
+import secretHackedData from "../../assets/img/cheese.gif";
+
 const secretText =
   "350d3e0c410c1709234d150a581425010d0054442d1c14065810294d170e5811224d130a1f0520041500"; // Encrypted data to prevent reading it directly from source code
 
@@ -81,7 +83,7 @@ const SecretData = () => {
       {showHackedData && (
         <img
           className="mb-10 sm:mb-5"
-          src="/img/cheese.gif"
+          src={secretHackedData}
           alt="Datos hackeados"
         />
       )}
