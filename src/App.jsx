@@ -8,6 +8,7 @@ import {
 import Root from "./views/Root";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
+import AdminSecrets from "./views/AdminSecrets";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/about",
-        element: <h1>About</h1>,
+        path: "/secret",
+        element: <AdminSecrets />,
       },
     ],
   },

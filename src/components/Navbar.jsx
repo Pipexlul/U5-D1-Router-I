@@ -42,11 +42,11 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about">
+                <NavLink to="/secret">
                   {({ isActive }) => {
                     return (
                       <ShinyNavLink
-                        label="Acerca de Nos"
+                        label="Confidencial (NO ENTRAR)"
                         bgColor="bg-fuchsia-600"
                         labelColor="text-fuchsia-400"
                         isActive={isActive}
@@ -57,17 +57,6 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-
-          <div className="flex items-center gap-4">
-            <div className="sm:flex sm:gap-4">
-              <a
-                className="block rounded-md bg-fuchsia-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-fuchsia-500"
-                href="/"
-              >
-                Login
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </header>
