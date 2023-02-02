@@ -4,7 +4,9 @@ const Navbar = () => {
   return (
     <header className="bg-gray-900">
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-        <a className="block  text-teal-300" href="/"></a>
+        <h1 className="text-2xl font-extrabold bg-clip-text bg-gradient-to-r from-red-300 via-yellow-300 to-red-300 text-transparent">
+          Panshito Con Quesho
+        </h1>
 
         <div className="flex flex-1 items-center justify-between">
           <nav>
