@@ -1,4 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import ShinyNavLink from "./ShinyNavLink";
 
 const Navbar = () => {
   return (
@@ -12,28 +14,46 @@ const Navbar = () => {
           <nav>
             <ul className="flex items-center gap-6 text-sm">
               <li>
-                <a
-                  className="transition text-white hover:text-white/75"
-                  href="/"
-                >
-                  Home
-                </a>
+                <NavLink to="/home">
+                  {({ isActive }) => {
+                    return (
+                      <ShinyNavLink
+                        label="Home"
+                        bgColor="bg-fuchsia-600"
+                        labelColor="text-fuchsia-400"
+                        isActive={isActive}
+                      />
+                    );
+                  }}
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="transition text-white hover:text-white/75"
-                  href="/"
-                >
-                  Contact
-                </a>
+                <NavLink to="/contact">
+                  {({ isActive }) => {
+                    return (
+                      <ShinyNavLink
+                        label="Contact"
+                        bgColor="bg-fuchsia-600"
+                        labelColor="text-fuchsia-400"
+                        isActive={isActive}
+                      />
+                    );
+                  }}
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="transition text-white hover:text-white/75"
-                  href="/"
-                >
-                  About
-                </a>
+                <NavLink to="/about">
+                  {({ isActive }) => {
+                    return (
+                      <ShinyNavLink
+                        label="About"
+                        bgColor="bg-fuchsia-600"
+                        labelColor="text-fuchsia-400"
+                        isActive={isActive}
+                      />
+                    );
+                  }}
+                </NavLink>
               </li>
             </ul>
           </nav>
