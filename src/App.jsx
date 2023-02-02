@@ -9,11 +9,13 @@ import Root from "./views/Root";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
 import AdminSecrets from "./views/AdminSecrets";
+import Error from "./views/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
